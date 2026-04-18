@@ -1,0 +1,10 @@
+installed dotenv
+used load_dotenv instead of dotenv_values because it is usable across all files as does not uses a map
+add optional override=True to keep always use latest env variables
+installed genai from google
+added a client 
+installed chromdb
+added a persistent client storing collections in local 
+used a get or create method to fetch collection if present or create if not
+query on the vectordb with a user query with n_results = 1 to get one match
+query returned rag response
