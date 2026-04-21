@@ -8,6 +8,6 @@ class QueryRequest(BaseModel):
 @app.post("/ask")
 async def ask_question(request: QueryRequest):
     user_input = request.question
-    return(f"Received_Question: {user_input}, status: success")
+    return{"Received_Question": user_input, "status": "success"}
 
 
